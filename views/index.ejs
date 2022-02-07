@@ -1,8 +1,8 @@
 <h2 class="page-header">Recently Added</h2>
-<div>
+<div class="books-view">
 
     <% books.forEach(book=>{ %>
-        <div>
+        <div class="single-book-view">
             <a href="/books/<%= book.id %>">
                 <img height="150" width="100" src="<%= book.coverImagePath%>" alt="book">
             </a>
