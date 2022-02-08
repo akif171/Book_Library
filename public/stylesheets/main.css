@@ -3,6 +3,8 @@
 @import "shared/header.css";
 @import "shared/buttons.css";
 @import "shared/form.css";
+@import "shared/author.css";
+@import "shared/book.css";
 
 :root {
   font-family: "Roboto", sans-serif;
@@ -37,18 +39,6 @@ body {
   font-weight: 500;
 }
 
-.books-view {
-  display: flex;
-}
-/* 
-.home-page-books {
-  margin-left: 0;
-} */
-
-.single-book-view {
-  margin-left: 1rem;
-}
-
-.single-book-view:first-child {
-  margin-left: 0;
+.error-message {
+  color: hsl(var(--color-danger-hue), 100%, 50%);
 }

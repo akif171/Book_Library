@@ -1,11 +1,2 @@
 <h2 class="page-header">Recently Added</h2>
-<div class="books-view">
-
-    <% books.forEach(book=>{ %>
-        <div class="single-book-view">
-            <a href="/books/<%= book.id %>">
-                <img height="150" width="100" src="<%= book.coverImagePath%>" alt="book">
-            </a>
-        </div>
-        <%}) %>
-</div>
+<%- include("partials/bookGrid.ejs",{books:books,large:true})%>
